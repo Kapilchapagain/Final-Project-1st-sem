@@ -424,6 +424,13 @@ void displayMenu() {
 }
 int main(){
 	int choice;
+	char username[50] = "admin", password[50] = "admin", get_username[50], get_password[50];
+	int main = 1;
+	printf("Enter your username: ");
+	gets(get_username);
+	printf("Enter your password: ");
+	gets(get_password);
+	if((strcmp(username, get_username) == 0 && strcmp(password, get_password) == 0)){
 	while (1) {
 		displayMenu();
 		scanf("%d", &choice);
@@ -445,6 +452,6 @@ int main(){
                 break;
 		}
 	}
-
+	}
 	return 0;
 }
