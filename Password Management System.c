@@ -147,6 +147,10 @@ int main() {
 		}
 	}
 }
+ else {
+		printf("Incorrect username or password\n\n");
+		main();
+ }
 	return 0;
 }
 
