@@ -422,6 +422,7 @@ void displayMenu() {
     printf("4. Exit\n");
     printf("Enter your choice: ");
 }
+int choice=0;
 int main(){
 	int choice;
 	char username[50] = "admin", password[50] = "admin", get_username[50], get_password[50];
@@ -452,6 +453,13 @@ int main(){
                 break;
 		}
 	}
-	}
+	}else {
+		count++;
+		printf("Incorrect username or password\n\n");
+		if(count >= 3) {
+			printf("Maximum Try Limit Reached...");
+			return 0;
+		}
+		main();
 	return 0;
 }
