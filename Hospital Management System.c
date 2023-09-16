@@ -303,7 +303,7 @@ int main(){
 	gets(get_username);
 	printf("Enter your password: ");
 	gets(get_password);
-	if((strcmp(username, get_username) && strcmp(password, get_password)) == 0){
+	if((strcmp(username, get_username) ==0 && strcmp(password, get_password) == 0)){
 		while (1) {
 		    printf("\nHospital Management System\n");
 		    printf("---------------------------\n");
