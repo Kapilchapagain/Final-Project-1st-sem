@@ -107,7 +107,7 @@ void deletePasswordInfo() {
 
 int main() {
 	int option;
-	char username[50] = "admin", password[50] = "admin", get_username[50], get_password[50];
+	char username[50] = "admin", password[50] = "password", get_username[50], get_password[50];
 	int main = 1;
 	printf("Enter your username: ");
 	gets(get_username);
